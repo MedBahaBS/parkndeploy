@@ -4,7 +4,7 @@ on:
   pull_request:
     types:
       - opened
-      - synchronize # Trigger the pipeline when a PR is updated
+      - synchronize
 
 jobs:
   frontend_checks:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '16' # Specify your Node.js version
+        node-version: '16'
 
     - name: Install dependencies
       run: npm install
