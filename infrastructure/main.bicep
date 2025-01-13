@@ -50,3 +50,6 @@ module staticWebAppBackend 'modules/staticWebAppBackend.bicep' = {
 // Export App Service Name
 output appServiceName string = appService.outputs.appServiceName
 output staticWebAppName string = staticWebApp.outputs.swaName
+
+
+
